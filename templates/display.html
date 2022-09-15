@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/styles.css" >
+</head>
+<body>
+    <div>
+        <h1>Average Mobile screen sizes</h1>
+            {% for phone in phones: %}
+        <h3>Phone {{phone[0]}} - screen size {{phone[1]}}</h3>
+            {% endfor %}
+    </div>
+</body>
+</html>
